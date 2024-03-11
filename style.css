@@ -73,6 +73,9 @@ section {
   }
 }
 
+
+
+
 .title {
   display: flex;
   align-items: center;
@@ -81,7 +84,7 @@ section {
   padding: 1.2rem 0;
   border-bottom: 0.2rem solid #a8a297;
   color: black;
-
+  
   span {
     color: #ff9421;
     padding-left: 0.5rem;
@@ -103,11 +106,11 @@ section {
   display: inline-block;
   padding: 0.8rem 3rem;
   background: #ff9421;
-
+  
   color: white;
   font-size: 1.7rem;
   cursor: pointer;
-
+  
   &:hover {
     background: #cf1a1a;
   }
@@ -124,18 +127,18 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 9%;
-
+  
   .logo {
     font-size: 2.5rem;
     font-weight: bold;
     color: black;
   }
-
+  
   i {
     color: #cf1a1a;
     padding-right: 0.2em;
   }
-
+  
   .navbar {
     a {
       font-size: 1.5rem;
@@ -146,17 +149,17 @@ section {
       color: black;
     }
   }
-
+  
   .icons div {
     font-size: 2.5rem;
     margin-left: 1.7rem;
     cursor: pointer;
-
+    
     &:hover {
       color: white;
     }
   }
-
+  
   .search-form {
     position: absolute;
     top: -115%;
@@ -169,12 +172,12 @@ section {
     box-shadow: 0 0.5rem 0.7rem #a8a297;
     background: white;
     transition: none;
-
+    
     &.active {
       top: 115%;
       transition: none;
     }
-
+    
     input {
       height: 100%;
       width: 100%;
@@ -183,18 +186,18 @@ section {
       color: black;
       text-transform: none;
     }
-
+    
     label {
       font-size: 2.5rem;
       margin-right: 1.7rem;
       cursor: pointer;
-
+      
       &:hover {
         color: #cf1a1a;
       }
     }
   }
-
+  
   .shopping-cart {
     position: absolute;
     top: 115%;
@@ -204,19 +207,19 @@ section {
     box-shadow: 0 0.3rem 0.5rem #a8a297;
     width: 35rem;
     padding: 2rem;
-
+    
     &.active {
       right: 2rem;
       transition: 0.4s linear;
     }
-
+    
     .box {
       display: flex;
       align-items: center;
       gap: 1.5rem;
       margin-bottom: 1.5rem;
       position: relative;
-
+      
       .fa-times {
         position: absolute;
         top: 50%;
@@ -225,12 +228,12 @@ section {
         font-size: 2rem;
         color: #ff9421;
         cursor: pointer;
-
+        
         &:hover {
           color: #cf1a1a;
         }
       }
-
+      
       .image {
         height: 10rem;
         background-size: contain;
@@ -238,7 +241,7 @@ section {
         background-position: center;
         width: 10rem;
       }
-
+      
       .content {
         h3 {
           font-size: 1.7rem;
@@ -248,7 +251,7 @@ section {
         span {
           font-size: 1.5rem;
           color: black;
-
+          
           &.multiply {
             margin: 0 0.5rem;
           }
@@ -264,13 +267,13 @@ section {
         color: black;
       }
     }
-
+    
     .btn {
       text-align: center;
       width: 100%;
     }
   }
-
+  
   .login-form {
     position: absolute;
     top: 115%;
@@ -280,12 +283,12 @@ section {
     box-shadow: 0 0.3rem 0.5rem #a8a297;
     width: 35rem;
     padding: 2rem;
-
+    
     &.active {
       right: 2rem;
       transition: 0.4s linear;
     }
-
+    
     h3 {
       color: black;
       text-transform: uppercase;
@@ -303,32 +306,32 @@ section {
       text-transform: none;
       width: 100%;
     }
-
+    
     .remember {
       display: flex;
       align-items: center;
       gap: 0.5rem;
       margin: 0.7rem 0;
       accent-color: #ff9421;
-
+      
       label {
         font-size: 1.5rem;
         color: black;
         cursor: pointer;
       }
     }
-
+    
     .btn {
       margin: 1rem 0;
       width: 100%;
       text-align: center;
     }
-
+    
     p {
       color: black;
       padding-top: 0.7rem;
       font-size: 1.4rem;
-
+      
       a {
         color: #ff9421;
         &:hover {
@@ -343,9 +346,29 @@ section {
   display: none;
 }
 
+
+@keyframes slide{
+  20%{
+    background-image: url("SliderImages/1212130.jpg");
+  }
+  40%{
+    background-image: url("SliderImages/orange.jpg");
+  }
+  60%{
+    background-image: url("SliderImages/orange-21.jpg");
+  }
+  80%{
+    background-image: url("SliderImages/361096.jpg");
+  }
+  100%{
+    background-image: url("SliderImages/strawberry.jpg");
+  }
+}
+
+
 .home {
   padding-top: 10rem;
-
+  
   .slides-container {
     height: 100%;
     width: 100%;
@@ -356,7 +379,7 @@ section {
       width: 100%;
       height: 100%;
       display: none;
-
+      
       &.active {
         display: grid;
       }
