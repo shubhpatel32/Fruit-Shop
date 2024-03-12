@@ -34,12 +34,12 @@ document.querySelector("#menu-btn").onclick = () => {
   loginForm.classList.remove("active");
 };
 
-window.onscroll = () => {
-  searchForm.classList.remove("active");
-  cart.classList.remove("active");
-  loginForm.classList.remove("active");
-  navbar.classList.remove("active");
-};
+// window.onscroll = () => {
+//   searchForm.classList.remove("active");
+//   cart.classList.remove("active");
+//   loginForm.classList.remove("active");
+//   navbar.classList.remove("active");
+// };
 
 let slides = document.querySelectorAll(".home .slides-container .slide");
 let index = 0;
@@ -49,7 +49,7 @@ function next() {
   slides[index].classList.remove("active");
   index = (index + 1) % slides.length;
   slides[index].classList.add("active");
-  setTimeout(next, 2000);
+  setTimeout(next, 3000);
 }
 
 let dott = document.querySelectorAll(".home .dot i");
@@ -60,7 +60,7 @@ function next2() {
   dott[index2].classList.remove("active");
   index2 = (index2 + 1) % dott.length;
   dott[index2].classList.add("active");
-  setTimeout(next2, 2000);
+  setTimeout(next2, 3000);
 }
 
 
