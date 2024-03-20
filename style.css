@@ -117,7 +117,7 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  height:7rem;
+  height: 7rem;
   z-index: 1000;
   background: #cf1a1a;
   background: linear-gradient(to left, #cf1a1a 0%, #ffbb26 100%);
@@ -134,6 +134,7 @@ section {
 
   i {
     color: #cf1a1a;
+    font-size: 3rem;
     padding-right: 0.2em;
   }
 
@@ -346,31 +347,31 @@ section {
 
 @keyframes slide {
   0% {
-    transform:translateX(50%);
+    transform: translateX(50%);
   }
   50% {
-    transform:translateX(0%);
+    transform: translateX(0%);
   }
   100% {
-    transform:translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
-@keyframes fadeIn{
+@keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   25% {
-    opacity:3;
+    opacity: 3;
   }
   50% {
-    opacity:5;
+    opacity: 5;
   }
   75% {
-    opacity:3;
+    opacity: 3;
   }
   100% {
-    opacity:0;
+    opacity: 0;
   }
 }
 
@@ -379,7 +380,7 @@ section {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
-  width:100%;
+  width: 100%;
 
   .slides-container {
     height: 100%;
@@ -397,7 +398,7 @@ section {
       }
 
       .image {
-        animation:fadeIn 3s infinite;
+        animation: fadeIn 3s infinite;
         justify-content: center;
         background-size: cover;
         background-repeat: no-repeat;
