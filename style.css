@@ -251,6 +251,10 @@ section {
           font-size: 1.5rem;
           color: black;
 
+          i {
+            font-size: 1.5rem;
+          }
+
           &.multiply {
             margin: 0 0.5rem;
           }
@@ -263,6 +267,7 @@ section {
       text-align: center;
       font-size: 2.2rem;
       span {
+        font-size: 2.2rem;
         color: black;
       }
     }
